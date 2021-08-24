@@ -64,7 +64,7 @@ def bilibili(video_name,file):
 
 class getbilibili(wx.Frame):
     def __init__(self):
-        super().__init__(None,title = '哔哩哔哩视频封面下载器',size = (400,300))
+        super().__init__(None,title = '哔哩哔哩视频封面下载器',size = (600,250))
         panel = wx.Panel(parent = self)
 
         self.statictext = wx.StaticText(parent = panel,label = '点击下方按钮开始下载')
@@ -86,7 +86,7 @@ class getbilibili(wx.Frame):
         vbox. Add(location,flag = wx.EXPAND|wx.LEFT,border = 10)
         vbox. Add(enter2,flag = wx.EXPAND|wx.ALL,border = 10)
 
-        vbox.Add(self.statictext,proportion = 1,flag = wx.ALIGN_CENTER_HORIZONTAL|wx.FIXED_MINSIZE|wx.TOP,border = 10)
+        vbox.Add(self.statictext,proportion = 100,flag = wx.ALIGN_CENTER_HORIZONTAL|wx.FIXED_MINSIZE|wx.TOP,border = 10)
         vbox.Add(button,proportion = 1,flag = wx.EXPAND|wx.BOTTOM,border = 10)
 
         panel.SetSizer(vbox)
